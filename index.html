@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Styles/styles.css">   
+    <link rel="stylesheet" href="Assets/css/styles.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    
+    <link rel="icon" href="Assets/img/Logo/logo-png.png" type="image/x-icon">
     <title>Neha Fashion</title>
 </head>
 <body>
@@ -42,7 +42,6 @@
         }
       </script>
 
-    <!---------- Navbar Section End ---------->
 
 
     <!---------- Hero Section Start ---------->
@@ -54,26 +53,50 @@
         </div>
     </div>
 
-    <!---------- Hero Section End ---------->
 
-    <!---------- About Hero ---------->
-    
+    <!---------- Video Section Start---------->
+
+    <div class="store-video">
+      <div class="about-videos">
+        <video class="about-video" autoplay muted loop>
+          <source src="/Assets/img/Video/about-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
     <div id="about" class="about-hero">
 
-        <div class="about-item"></div>
+    <!---------- About Hero Start---------->
 
-        <div class="about-text">
-            <div class="border-line">
-                <h1>WELCOME TO NEHA FASHION !</h1>
-                <p>At Neha Fashion, we specialize in women's clothing that combines style with quality. 
-                   Explore our exquisite collection featuring dresses, crop tops, and jeans, all crafted from the finest ....</p>
-
-                <div class="Btn">
-                    <a href="#" class="button">Show More</a>
-                </div>
-
-            </div>
+      <div class="about-text">
+        <div class="border-line">
+          <h1>WELCOME TO NEHA FASHION !</h1>
+          <p>At Neha Fashion, we specialize in women's clothing that combines style with quality. 
+            Explore our exquisite collection featuring dresses, crop tops, and jeans, all crafted from the finest</p>
+          <p id="description" style="display: none;">materials to ensure both comfort and elegance. Whether you're dressing up for a special occasion or looking for everyday
+             chic, Neha Fashion has the perfect outfit 
+            for you. Experience fashion that feels as good as it looks, only at Neha Fashion.</p>
+      
+          <div class="Btn">
+            <button id="toggleButton" class="button">Show More</button>
+          </div>
         </div>
+      </div>
+      
+      <script>
+        // JavaScript to toggle the description text
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var description = document.getElementById('description');
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+                this.textContent = 'Show Less';
+            } else {
+                description.style.display = 'none';
+                this.textContent = 'Show More';
+            }
+        });
+      </script>
     </div>
 
     <!---------- Scroll Line Text Start---------->
@@ -82,7 +105,6 @@
         <marquee behavior="" direction="right">NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION</marquee>
      </div>
 
-    <!---------- Scroll Line Text End---------->
 
     <!---------- Trending Dress Start---------->
 
@@ -91,7 +113,7 @@
 
     <div class="wrapper">
 		<div class="card">
-			<img src="Assets/Item-Cards/Dress/dress1.jpg" alt="">
+			<img src="Assets/img/Item-Cards/Dress/dress1.jpg" alt="">
 			<div class="info">
 				<h1>Y2K Spagathi Dress</h1>
 				<p>Introducing our stunning Purple Boho Dress, a perfect blend of style and comfort designed to make you stand out. </p>
@@ -99,8 +121,9 @@
 				<a href="#" class="btn">Buy Now</a>
 			</div>
 		</div>
+
 		<div class="card">
-			<img src="Assets/Item-Cards/Dress/dress2.jpg" alt="">
+			<img src="Assets/img/Item-Cards/Dress/dress2.jpg" alt="">
 			<div class="info">
                 <div class="info">
                     <h1>Women Vacation Spring Break Dress</h1>
@@ -110,8 +133,9 @@
                 </div>
 			</div>
 		</div>
+
 		<div class="card">
-			<img src="Assets/Item-Cards/Dress/dress3.jpg" alt="">
+			<img src="Assets/img/Item-Cards/Dress/dress3.jpg" alt="">
 			<div class="info">
                 <div class="info">
                     <h1>Women Vacation Spring Dress</h1>
@@ -121,8 +145,9 @@
                 </div>
 			</div>
 		</div>
+
 		<div class="card">
-			<img src="Assets/Item-Cards/Dress/dress4.jpg" alt="">
+			<img src="Assets/img/Item-Cards/Dress/dress4.jpg" alt="">
 			<div class="info">
                 <div class="info">
                     <h1>Layer Hem Cami Black Dre Dress</h1>
@@ -131,11 +156,12 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
 			</div>
+
 		</div>
 	</div>
     <h2 alt="#">VIEW ALL</h2>
 </div>
-    <!---------- Trending Dress Start End---------->
+
 
     <!---------- Trending Dress Start---------->
 
@@ -144,7 +170,7 @@
     
         <div class="wrapper">
             <div class="card">
-                <img src="Assets/Item-Cards/Croptop/Jeans1.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Croptop/Jeans1.jpg" alt="">
                 <div class="info">
                     <h1>Essnce Women's Texture Crop Top</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -152,8 +178,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Croptop/Jeans2.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Croptop/Jeans2.jpg" alt="">
                 <div class="info">
                     <h1>Women's Texture Crop Top</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -161,8 +188,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Croptop/Jeans3.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Croptop/Jeans3.jpg" alt="">
                 <div class="info">
                     <h1>Cropped Strapless Top</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -170,8 +198,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Croptop/Jeans4.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Croptop/Jeans4.jpg" alt="">
                 <div class="info">
                     <h1>Color Block Striped Short Cropped Strapless Top</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -182,16 +211,16 @@
         </div>
         <h2 alt="#">VIEW ALL</h2>
     </div>
-        <!---------- Trending Dress Start End---------->
 
-            <!---------- Trending Dress Start---------->
+
+    <!---------- Trending Dress Start---------->
 
     <div class="hero-cards">
         <h1>TRENDING JEANS</h1>
     
         <div class="wrapper">
             <div class="card">
-                <img src="Assets/Item-Cards/Jeans/jeans1.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Jeans/jeans1.jpg" alt="">
                 <div class="info">
                     <h1>High Waist Argyle Print Wide Leg Jeans</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -199,8 +228,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Jeans/jeans2.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Jeans/jeans2.jpg" alt="">
                 <div class="info">
                     <h1>High Waist Y2K Print  Jeans</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -208,8 +238,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Jeans/jeans3.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Jeans/jeans3.jpg" alt="">
                 <div class="info">
                     <h1> Wide Leg Jeans</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -217,8 +248,9 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
             <div class="card">
-                <img src="Assets/Item-Cards/Jeans/jeans4.jpg" alt="">
+                <img src="Assets/img/Item-Cards/Jeans/jeans4.jpg" alt="">
                 <div class="info">
                     <h1>Print Wide Leg Jeans</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
@@ -226,12 +258,12 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
+
         </div>
         <h2 alt="#">VIEW ALL</h2>
     </div>
-        <!---------- Trending Dress Start End---------->
 
-        <!---------- Footer Section and Contact Start---------->
+    <!---------- Footer Section and Contact Start---------->
 
         <div id="contact" class="content1">
           </div>
@@ -243,7 +275,7 @@
                   <p>At Neha Fashion, we specialize in women's clothing that combines style with quality. Explore our exquisite collection featuring dresses, crop tops, and jeans, all crafted from the finest materials to ensure both comfort and elegance. Whether you're dressing up for a special occasion or looking for everyday chic, Neha Fashion has the perfect outfit for you. Experience fashion that feels as good as it looks, only at Neha Fashion.</p>
                   <div class="social">
                     <a href="https://web.facebook.com/profile.php?id=100012056560141"><span class="fab fa-facebook-f"></span></a>
-                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://x.com/ashan__k"><span class="fab fa-twitter"></span></a>
                     <a href="https://www.instagram.com/ashxn___/"><span class="fab fa-instagram"></span></a>
                     <a href="https://www.youtube.com/channel/UCr_Q0SZiTgE0XT_kDMq_HBg"><span class="fab fa-youtube"></span></a>
                   </div>
@@ -293,7 +325,7 @@
           <div class="bottom">
             <center>
               <span class="credit">Created By <a href="https://github.com/Ashankavi/frontend-internship-test">Ashxn</a> | </span>
-              <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+              <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
             </center>
           </div>
         <!---------- Footer Section and Contact End---------->
