@@ -4,48 +4,282 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-
+    <link rel="stylesheet" href="Styles/styles.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     
     <title>Neha Fashion</title>
 </head>
 <body>
 
-    <div class="nav">
+        <!---------- Navbar Section Start---------->
 
-        <a href="#" class="logo">NEha.</a>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">NEha.</a></li>
+          <li class="hideOnMobile"><a href="#">Home</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
 
-        <input type="checkbox" id="check">
+    <!---------- Navbar Section End ---------->
 
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon" ></i>
-        </label>
 
-    <nav class="navbar">
-        <a href="#" style="--i:0;">Home</a>
-        <a href="#" style="--i:1;">About</a>
-        <a href="#" style="--i:2;">Contact</a>
-    </div>
-    </nav>
+    <!---------- Hero Section Start ---------->
+
     <div class="hero">
-        <div class="container">
+        <div class="hero-text">
             <h1>WELCOME TO</h1>
-            <h2>NEHA FASHION</h2>
+            <h2>NEHA <br>FASHION</h2>
         </div>
     </div>
 
-    <div class="section2">
-        <div class="image-section">
-            <img src="/Assets/section_2/product.jpg" alt="Fashion Image">
-        </div>
-        <div class="content-section">
-            <h1>WELCOME TO NEHA FASHION!</h1>
-            <p>At <b>Neha Fashion</b>, We Specialize In Women's Clothing That Combines Style With Quality. Explore Our Exquisite Collection Featuring Dresses, Crop Tops, And Jeans, All Crafted From The Finest ....</p>
-            <a href="#" class="btn">Show More</a>
+    <!---------- Hero Section End ---------->
+
+    <!---------- About Hero ---------->
+    
+    <div class="about-hero">
+
+        <div class="about-item"></div>
+
+        <div class="about-text">
+            <div class="border-line">
+                <h1>WELCOME TO NEHA FASHION !</h1>
+                <p>At Neha Fashion, we specialize in women's clothing that combines style with quality. 
+                   Explore our exquisite collection featuring dresses, crop tops, and jeans, all crafted from the finest ....</p>
+
+                <div class="Btn">
+                    <a href="#" class="button">Show More</a>
+                </div>
+
+            </div>
         </div>
     </div>
+
+    <!---------- Scroll Line Text Start---------->
+
+    <div class="scrool-line scroll-right">
+        <marquee behavior="" direction="right">NEHA FASHION | NEHA FASHION | NEHA FASHION | NEHA FASHION</marquee>
+     </div>
+
+    <!---------- Scroll Line Text End---------->
+
+    <!---------- Trending Dress Start---------->
+
+    <div class="hero-cards">
+    <h1>TRENDING DRESS</h1>
+
+    <div class="wrapper">
+		<div class="card">
+			<img src="Assets/Item-Cards/Item1.jpg" alt="">
+			<div class="info">
+				<h1>Y2K Spagathi Dress</h1>
+				<p>Introducing our stunning Purple Boho Dress, a perfect blend of style and comfort designed to make you stand out. </p>
+                <h2>$59.85</h2>
+				<a href="#" class="btn">Buy Now</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="Assets/Item-Cards/Item1.jpg" alt="">
+			<div class="info">
+                <div class="info">
+                    <h1>Y2K Spagathi Dress</h1>
+                    <p>Introducing our stunning Purple Boho Dress, a perfect blend of style and comfort designed to make you stand out. </p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+			</div>
+		</div>
+		<div class="card">
+			<img src="Assets/Item-Cards/Item1.jpg" alt="">
+			<div class="info">
+                <div class="info">
+                    <h1>Y2K Spagathi Dress</h1>
+                    <p>Introducing our stunning Purple Boho Dress, a perfect blend of style and comfort designed to make you stand out. </p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+			</div>
+		</div>
+		<div class="card">
+			<img src="Assets/Item-Cards/Item1.jpg" alt="">
+			<div class="info">
+                <div class="info">
+                    <h1>Y2K Spagathi Dress</h1>
+                    <p>Introducing our stunning Purple Boho Dress, a perfect blend of style and comfort designed to make you stand out. </p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+			</div>
+		</div>
+	</div>
+    <h2 alt="#">VIEW ALL</h2>
+</div>
+    <!---------- Trending Dress Start End---------->
+
+    <!---------- Trending Dress Start---------->
+
+    <div class="hero-cards">
+        <h1>TRENDING CROPTOPS</h1>
+    
+        <div class="wrapper">
+            <div class="card">
+                <img src="Assets/Item-Cards/Item3.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item3.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item3.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item3.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <h2 alt="#">VIEW ALL</h2>
+    </div>
+        <!---------- Trending Dress Start End---------->
+
+            <!---------- Trending Dress Start---------->
+
+    <div class="hero-cards">
+        <h1>TRENDING JEANS</h1>
+    
+        <div class="wrapper">
+            <div class="card">
+                <img src="Assets/Item-Cards/Item2.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item2.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item2.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Assets/Item-Cards/Item2.jpg" alt="">
+                <div class="info">
+                    <h1>Horseshoe Bend, Arizona</h1>
+                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                    <h2>$59.85</h2>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <h2 alt="#">VIEW ALL</h2>
+    </div>
+        <!---------- Trending Dress Start End---------->
+
+        <!---------- Footer Section and Contact Start---------->
+
+        <footer>
+            <div class="content">
+              <div class="left box">
+                <div class="upper">
+                  <div class="topic">About us</div>
+                  <p>CodingLab is a channel where you can learn HTML,
+                  CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                </div>
+                <div class="lower">
+                  <div class="topic">Contact us</div>
+                  <div class="phone">
+                    <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                  </div>
+                  <div class="email">
+                    <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Web Design, Development</a></div>
+                <div><a href="#">Web UX Design, Reasearch</a></div>
+                <div><a href="#">Web User Interface Design</a></div>
+                <div><a href="#">Theme Development, Design</a></div>
+                <div><a href="#">Mobile Application Design</a></div>
+                <div><a href="#">Wire raming & Prototyping</a></div>
+              </div>
+              <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                  <input type="text" placeholder="Enter email address">
+                  <input type="text" placeholder="Enter your message">
+                  <input type="submit" name="" value="Send">
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="bottom">
+              <p>Copyright &#169; 2020 <a href="#">CodingLab</a> All rights reserved</p>
+            </div>
+          </footer>
+
+        <!---------- Footer Section and Contact End---------->
+
 </body>
 </html>
